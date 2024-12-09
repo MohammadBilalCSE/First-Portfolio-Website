@@ -56,7 +56,7 @@ Welcome to my first portfolio website! This project showcases my skills, experie
 ![Desktop View](images/first-port-web-img.png)  
 
 ### 📱 **Mobile View**  
-![Mobile View](#) *(https://github.com/MohammadBilalCSE/First-Portfolio-Website)*  
+![Mobile View](images/first-port-web-img-mob.png)  
 
 
 ## 📜 **License**  
