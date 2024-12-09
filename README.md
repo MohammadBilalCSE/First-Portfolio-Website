@@ -53,7 +53,7 @@ Welcome to my first portfolio website! This project showcases my skills, experie
 ## 📸 **Screenshots**  
 
 ### 💻 **Desktop View**  
-![Desktop View](#) *(https://github.com/MohammadBilalCSE/First-Portfolio-Website/blob/main/images/FIRST-EC-WEB-Showcase-img.png)*  
+![Desktop View](https://github.com/MohammadBilalCSE/First-Portfolio-Website/blob/main/images/FIRST-EC-WEB-Showcase-img.png)  
 
 ### 📱 **Mobile View**  
 ![Mobile View](#) *(https://github.com/MohammadBilalCSE/First-Portfolio-Website)*  
