@@ -1,0 +1,936 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Tilt Neon', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #0D0E26;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #0D0E26;
+    color: #F29D35;
+}
+nav .logo{
+    width: 100px;
+    height: 65px;
+    padding: 3px 0px 0px 0px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav ul .nav-link{
+    list-style: none;
+    margin: 0px 40px 0px 0px;
+    font-size: 20px;
+    position: relative;
+    cursor: pointer;
+}
+.nav-link a{
+    text-decoration: none;
+    color: #F29D35;
+}
+nav ul .nav-link::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: #F29D35;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.4s;
+    pointer-events: none;
+}
+nav ul .nav-link:hover::after{
+    width: 100%;
+}
+
+/*NAVBAR'S CSS END HERE **********/
+
+.section-1{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 500px;
+    background-image: url(/images/big-sc-back.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.social-links ul li{
+    list-style: none;
+    margin: 0px 0px 15px 15px;
+}
+.social-links ul li a .bi{
+    color: #F29D35;
+    font-size: 28px;
+}
+.header-text{
+    padding: 160px 40px;
+}
+.header-text p{
+    color: #F29D35;
+    font-size: 18px;
+}
+.header-text .ht-sp{
+    color: #e9e9fb;
+    font-size: 32px;
+}
+.header-text #element{
+    color: #e9e9fb;
+    font-size: 28px;
+}
+.headerBtn{
+    margin: 20px 0px 0px 0px;
+}
+.headerBtn .head-btn{
+    text-decoration: none;
+    color: black;
+    background-color: #F29D35;
+    padding: 8px;
+    border-radius: 7px;
+    font-size: 16px;
+}
+.headerBtn .head-btn:hover{
+    color: #FFF;
+}
+.headerBtn .h-dr-btn{
+    margin: 0px 0px 0px 25px;
+}
+
+/*HEADER SECTION END HERE *********/
+
+.section-2{
+    margin: 50px 20px;
+}
+.row{
+    display: grid;
+    grid-template-columns: 30% 60%;
+    column-gap: 30px;
+}
+.about-col-1{
+    background-image: url(/images/small-sc-back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.sub-title{
+    font-size: 50px;
+    font-weight: 600;
+    color: #f29d35;
+}
+.about-col-2 p{
+    font-size: 18px;
+    color: #fff;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-titles .tab-links{
+    font-size: 24px;
+    color: #F29D35;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 28px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: #f2ac57;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.4s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+    font-size: 20px;
+}
+.tab-contents ul li span{
+    color: #F29D35;
+    font-size: 18px;
+}
+.tab-contents ul li span #text{
+    color: #FFF;
+    font-size: 18px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+.tab-contents ul li ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.tab-contents ul li ul li{
+    margin: 10px 0px 0px 30px;
+    list-style: disc;
+    color: white;
+}
+
+/*ABOUT END HERE ***********/
+
+.section-3{
+    background-color: #191a35d7;
+}
+#portfolio{
+    padding: 0px 50px 5px 50px;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #f2ac57);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 5px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer h3, p{
+    color: #FFF;
+}
+.layer a{
+    margin-top: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 28px;
+    line-height: 60px;
+    background-color: #0D0E26;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.port-Btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #f29d35;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #f2ac57;
+    transition: background 0.4s;
+}
+.port-Btn:hover{
+    background: #f29d35;
+    color: white;
+}
+
+/*PORTFOLIO END HERE **************/
+
+.section-4{
+    margin: 20px 50px;
+}
+#contact{
+    background-color: #0D0E26;
+}
+.contact-left p{
+    color: white;
+    padding: 15px 0px 0px 0px;
+    margin: 10px;
+}
+.social-icons a{
+    color: #F29D35;
+    padding: 0px 10px;
+}
+.cont-Btn{
+    display: inline-block;
+    text-decoration: none;
+    background: #f2ac57;
+    color: #0D0E26;
+    padding: 8px;
+    border-radius: 7px;
+    margin: 25px 0px 0px 10px;
+}
+.cont-Btn:hover{
+    color: white;
+}
+.contact-right form{
+    width: 100%;
+
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #191b40;
+    padding: 15px;
+    margin: 15px 0;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .cont-Btn{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.footer{
+    margin: 0;
+    padding: 0;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background-color: #191a35d7;
+    font-weight: 300;
+    margin-top: 40px;
+
+}
+.alert{
+    display: none;
+    color: greenyellow;
+    font-size: 14px;
+}
+
+
+/*PORT PAGE'S CSS START HERE **********/
+
+.port-heading{
+    background-color: #191b40;
+    color: #F29D35;
+    text-align: center;
+    margin: 3px 0px 0px 0px;
+    padding: 16px;
+}
+.port-container{
+    margin: 30px;
+}
+.allMyWorkMain{
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    column-gap: 26px;
+}
+.card{
+    padding: 16px 20px 16px 20px;
+    background-color: #3b3c4e;
+    border-radius: 10px;
+}
+.card:hover{
+    background-color: #191b40;
+    border: 2px solid #F29D35;
+}
+.card .port-img img{
+    width: 100%;
+}
+.port-btnGr{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px 0px 0px 0px;
+}
+.srcCode a button, .livePre a button{
+    color: #0D0E26;
+    background-color: #F29D35;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+}
+.srcCode a button:hover, .livePre a button:hover{
+    color: #F29D35;
+    background-color: #191b40;
+    border: 2px solid #F29D35;
+}
+
+/*PORT PAGE'S CSS END HERE **********/
+
+/*MEDIA QUERY START HERE *********/
+nav .op-btn, .cl-btn{
+    display: none;
+}
+
+@media screen and (max-width: 1300px){
+    /*my-work's media-css ******/
+    .allMyWorkMain {
+        display: grid;
+        grid-template-columns: repeat(3, 32%);
+        column-gap: 20px;
+        row-gap: 14px;
+        justify-content: center;
+    }
+    .port-heading{
+        padding:  8px;
+    }
+    .port-heading h1{
+        font-size: 20px;
+    }
+    .srcCode a button, .livePre a button {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .row{
+        grid-template-columns: 46% 50%;
+        column-gap: 15px;
+    }
+    .sub-title{
+        font-size: 30px;
+    }
+    .about-col-1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-col-2 p{
+        font-size: 14px;
+    }
+    .tab-titles .tab-links {
+        font-size: 22px;
+    }
+    .tab-contents ul li span {
+        font-size: 16px;
+    }
+    .tab-titles {
+        margin: 12px 0 12px;
+    }
+    .tab-contents ul li ul li {
+        font-size: 13px;
+    }
+    .s3-sub-title{
+        padding: 20px 0px 0px 0px;
+        text-align: center;
+    }
+    .work-list{
+        grid-template-columns: repeat(1, 86%);
+        row-gap: 30px;
+        margin-top: 20px;
+        justify-content: center;
+    }
+    .layer{
+        font-size: 16;
+    }
+    /*my-work's media-css ******/
+    .allMyWorkMain {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 26px;
+        row-gap: 14px;
+        justify-content: center;
+    }
+    .port-heading{
+        padding: 12px;
+    }
+    .port-heading h1{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    /*NAV MEDIA START HERE **********/
+
+    nav{
+        justify-content: space-around;
+        height: 70px;
+    }
+    nav .logo{
+        height: 60px;
+    }
+    nav .op-btn{
+        display: block;
+        font-size: 32px;
+        color: #F29D35;
+        border-radius: 5px;
+        padding: 1px 2px 0px 2px;
+        margin-left: 150px;
+    }
+    nav .cl-btn {
+        display: block;
+        position: absolute;
+        top: 18px;
+        left: 18px;
+        cursor: pointer;
+        color: #0D0E26;
+        border-radius: 4px;
+        background-color: #F29D35;
+        font-size: 24px;
+    }
+    nav ul{
+        display: inline-block;
+        border: .3px solid #F29D35;
+        background-color: #191b40;
+        position: fixed;
+        top: 6px;
+        right: -220px;
+        width: 199px;
+        height: 60vh;
+        padding-top: 45px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul .nav-link{
+        display: block;
+        margin: 18px 0px 0px 15px;
+        color: #F29D35;
+        font-size: 20px;
+    }
+    nav ul .nav-link::after{
+        color: #F29D35;
+        background-color: #F29D35;
+        font-size: 20px;
+    }
+
+    /*NAV MEDIA START HERE **********/
+
+    .row {
+        grid-template-columns: 49% 49%;
+        column-gap: 12px;
+    }
+    .sub-title{
+        font-size: 24px;
+    }
+    .tab-titles .tab-links {
+        font-size: 18px;
+    }
+    .tab-links{
+        margin-right: 20px;
+    }
+    .tab-contents ul li span {
+        font-size: 12px;
+    }
+    .tab-contents ul li ul li {
+        font-size: 10px;
+    }
+    .about-col-1{
+        background-image: url(/images/small-sc-back.jpg);
+        height: 360px;
+    }
+    .about-col-2 p {
+        font-size: 11px;
+    }
+    .tab-contents ul li ul li {
+        margin: 10px 0px 0px 22px;
+    }
+    .section-4{
+        margin: 20px 20px;
+    }
+    .contact-left p{
+        margin: 10px 0px;
+        font-size: 15px;
+    }
+    .social-icons a{
+        font-size: 18px;
+    }
+    form input, form textarea {
+        width: 90%;
+    }
+
+    /*my-work's media-css ******/
+    .allMyWorkMain {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 26px;
+        row-gap: 14px;
+    }
+    .port-heading{
+        padding: 8px;
+    }
+    .port-heading h1{
+        font-size: 16px;
+    }
+    .srcCode a button, .livePre a button {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    /*NAV MEDIA START HERE **********/
+
+    nav{
+        justify-content: space-around;
+        height: 70px;
+    }
+    nav .logo{
+        height: 60px;
+    }
+    nav .op-btn{
+        display: block;
+        font-size: 30px;
+        color: #F29D35;
+        border-radius: 5px;
+        padding: 1px 2px 0px 2px;
+        margin-left: 150px;
+    }
+    nav .cl-btn {
+        display: block;
+        position: absolute;
+        top: 18px;
+        left: 18px;
+        cursor: pointer;
+        color: #0D0E26;
+        border-radius: 4px;
+        background-color: #F29D35;
+        font-size: 24px;
+    }
+    nav ul{
+        display: inline-block;
+        border: .3px solid #F29D35;
+        background-color: #191b40;
+        position: fixed;
+        top: 6px;
+        right: -220px;
+        width: 199px;
+        height: 60vh;
+        padding-top: 45px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul .nav-link{
+        display: block;
+        margin: 18px 0px 0px 15px;
+        color: #F29D35;
+        font-size: 20px;
+    }
+    nav ul .nav-link::after{
+        color: #F29D35;
+        background-color: #F29D35;
+        font-size: 20px;
+    }
+
+    /*NAV MEDIA START HERE **********/
+    .section-1{
+        background-image: url(/images/small-sc-back.jpg);
+    }
+    .social-links ul li {
+        margin: 0px 0px 10px 8px;
+    }
+    .header-text p{
+        font-size: 14px;
+    }
+    .header-text .ht-sp{
+        font-size: 22px;
+    }
+    .header-text #element{
+        font-size: 20px;
+    }
+    .headerBtn .head-btn{
+        font-size: 14px;
+    }
+    .row{
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 15px;
+    }
+    .about-col-1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-col-1 img{
+        width: 350px;
+        padding: 0px;
+        align-items: center;
+    }
+    .section-2 {
+        margin: 50px 15px;
+    }
+    .sub-title {
+        font-size: 28px;
+    }
+    .about-col-2 p {
+        font-size: 13px;
+    }
+    .tab-titles .tab-links {
+        font-size: 18px;
+        margin-right: 26px;
+    }
+    .tab-contents ul li span {
+        font-size: 16px;
+    }
+    .tab-contents ul li ul li {
+        margin: 10px 0px 0px 24px;
+    }
+    .tab-contents ul li{
+        font-size: 16px;
+    }
+    .s3-sub-title{
+        padding-top: 20px;
+    }
+    .work-list{
+        margin-top: 20px;
+    }
+    #portfolio {
+        padding: 50px 15px;
+    }
+    .contact-left p {
+        margin: 8px 8px 8px 0px;
+    }
+    .social-icons{
+        margin-top: 15px;
+    }
+    .social-icons a {
+        padding: 8px 8px 8px 0px;
+    }
+    .cont-Btn{
+        margin: 15px 0px 0px 0px;
+    }
+    form input, form textarea {
+        padding: 15px 5px;
+    }
+    .layer h3, p {
+        font-size: 13px;
+    }
+    /*my-work's media-css ******/
+    .allMyWorkMain {
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        column-gap: 26px;
+        row-gap: 14px;
+        justify-content: center;
+    }
+    .port-heading{
+        padding: 10px;
+    }
+    .port-heading h1{
+        font-size: 16px;
+    }
+    .srcCode a button, .livePre a button {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width:361px){
+    /*my-work's media-css ******/
+    .allMyWorkMain {
+        display: grid;
+        grid-template-columns: repeat(1, 99%);
+        column-gap: 20px;
+        row-gap: 14px;
+        justify-content: center;
+    }
+    .port-heading{
+        padding:  8px;
+    }
+    .port-heading h1{
+        font-size: 13px;
+    }
+    .srcCode a button, .livePre a button {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    /*NAV MEDIA START HERE **********/
+
+    nav{
+        justify-content: space-evenly;
+        height: 60px;
+    }
+    nav .logo{
+        height: 52px;
+    }
+    nav .op-btn{
+        display: block;
+        font-size: 36px;
+        color: #F29D35;
+        border-radius: 5px;
+        padding: 1px 2px 0px 2px;
+        margin-left: 126px;
+    }
+    nav .cl-btn {
+        display: block;
+        position: absolute;
+        top: 18px;
+        left: 18px;
+        cursor: pointer;
+        color: #0D0E26;
+        border-radius: 4px;
+        background-color: #F29D35;
+        font-size: 20px;
+    }
+    nav ul{
+        display: inline-block;
+        border: .3px solid #F29D35;
+        background-color: #191b40;
+        position: fixed;
+        top: 6px;
+        right: -220px;
+        width: 190px;
+        height: 60vh;
+        padding-top: 45px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul .nav-link{
+        display: block;
+        margin: 18px 0px 0px 15px;
+        color: #F29D35;
+        font-size: 20px;
+    }
+    nav ul .nav-link::after{
+        color: #F29D35;
+        background-color: #F29D35;
+        font-size: 20px;
+    }
+
+    /*NAV MEDIA START HERE **********/
+    .section-1{
+        background-image: url(/images/small-sc-back.jpg);
+    }
+    .social-links ul li {
+        margin: 0px 0px 10px 8px;
+    }
+    .social-links ul li a .bi{
+        font-size: 22px;
+    }
+    .header-text{
+        padding: 160px 14px;
+    }
+    .header-text p{
+        font-size: 12px;
+    }
+    .header-text .ht-sp{
+        font-size: 24px;
+    }
+    .header-text #element{
+        font-size: 19px;
+    }
+    .headerBtn .head-btn{
+        font-size: 12px;
+    }
+    .headerBtn .h-dr-btn{
+        margin: 0px 0px 0px 15px;
+    }
+    .about-col-1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-col-1 img{
+        width: 266px;
+        padding: 0px;
+        align-items: center;
+    }
+    .section-2 {
+        margin: 50px 10px;
+    }
+    .sub-title {
+        font-size: 22px;
+    }
+    .about-col-2 p {
+        font-size: 11px;
+    }
+    .tab-titles .tab-links {
+        font-size: 15px;
+        margin-right: 22px;
+    }
+    .tab-contents ul li span {
+        font-size: 13px;
+    }
+    .tab-contents ul li ul li {
+        margin: 10px 0px 0px 24px;
+    }
+    .tab-contents ul li{
+        font-size: 11px;
+    }
+    .s3-sub-title{
+        padding-top: 20px;
+    }
+    .work-list{
+        margin-top: 20px;
+    }
+    .layer{
+        padding: 0px 0px;
+    }
+    #portfolio {
+        padding: 50px 15px;
+    }
+    .section-4{
+        margin: 20px 36px;
+    }
+    .contact-left p {
+        margin: 8px 8px 8px 0px;
+    }
+    .social-icons{
+        margin-top: 15px;
+    }
+    .social-icons a {
+        padding: 8px 8px 8px 0px;
+    }
+    .cont-Btn{
+        margin: 15px 0px 0px 0px;
+    }
+    form input, form textarea {
+        padding: 15px 5px;
+    }
+    .layer h3, p {
+        font-size: 10px;
+    }
+    /*my-work's media-css ******/
+    .allMyWorkMain {
+        display: grid;
+        grid-template-columns: repeat(1, 99%);
+        column-gap: 20px;
+        row-gap: 14px;
+        justify-content: center;
+    }
+    .port-heading{
+        padding: 3px;
+    }
+    .port-heading h1{
+        font-size: 13px;
+    }
+    .srcCode a button, .livePre a button {
+        font-size: 10px;
+    }
+}
+

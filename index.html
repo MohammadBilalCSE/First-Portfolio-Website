@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="All CSS/bootstrap-icons-1.10.5/bootstrap-icons-1.10.5/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="All CSS/style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <img src="/images/Design 2.jpeg" alt="" class="logo">
+            <ul id="sidemenu" class="nav-links">
+              <li class="nav-link"><a href="#">Home</a></li>
+              <li class="nav-link"><a href="#about">About me</a></li>
+              <li class="nav-link"><a href="#">Portfolio</a></li>
+              <li class="nav-link"><a href="#contact">Contact</a></li>
+              <i class="cl-btn bi bi-x" onclick="closemenu()"></i>
+          </ul>
+          <i class="op-btn bi bi-card-list" onclick="openmenu()"></i>
+        </nav>
+    </header>
+
+    <main>
+        <div class="section-1">
+            <div class="social-links">
+                <ul>
+                    <li><a href="#" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="bi bi-twitter"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="bi bi-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="header-text">
+                <p>Hi, My Name is</p>
+                <span class="ht-sp">MOHAMMAD BILAL</span>
+                <h1><span id="element"></span></h1>
+                <p>Welcome to the digital realm of Mohammad Bilal, a passionate CS student <br> and web / app developer. Explore my creative journey!</p>
+                <div class="headerBtn">
+                 <a href="#about" class="head-btn">See more</a>
+                 <a href="#" download class="head-btn h-dr-btn">Download Resume</a>
+                </div> 
+             </div>
+        </div>
+
+        <div class="section-2">
+            <div id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="about-col-1">
+                        </div>
+                        <div class="about-col-2">
+                            <h1 class="sub-title">About Me</h1>
+                            <p>I'm a passionate Full Stack Developer dedicated to crafting seamless web experiences. With a strong foundation in both front-end and back-end development, I thrive on collaborating with cross-functional teams to create innovative, user-friendly web applications. I'm committed to quality, security, and staying up-to-date with the latest technologies.</p>
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('experience')">Experince</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>Programming Languages</span><br><ul><li>C</li><li>C++</li><li>Python</li><li>JavaScript</li><li>Java</li></ul></li>
+                                    <li><span>Libraries + Frameworks</span><br><ul><li>Bootstap</li><li>Tailwind</li><li>ReactJS</li><li>Django</li></ul></li>
+                                    <li><span>Technologies</span><br><ul><li>HTML</li><li>CSS</li><li>Sql/MySql</li><li>MongoDB</li></ul></li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>E-Commerce Website | Minor Project</span><br><ul><li>A shopping website using HTML, CSS, and JS.</li></ul></li>
+                                    <li><span>Website | OB-Bazaar </span><br><ul><li>A shopping website using HTML, CSS, and JS.</li></ul></li>
+                                    <li><span>Stock Market Prediction | Major Project</span><br><ul><li>Working on app using ML+AI for final year major project.</li></ul></li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>United College of Engineering and Research</span><br><ul><li>2020-2024</li></ul></li>
+                                    <li><span>Anglo Bengali Intermediate College</span><br><ul><li>2017-2019</li></ul></li>
+                                    <li><span>Children's Academy High School</span><br><ul><li>2017</li></ul></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+            
+        </div>
+
+        <div class="section-3">
+            <div id="portfolio">
+                <div class="container">
+                    <h1 class="sub-title s3-sub-title">My Work</h1>
+                    <div class="work-list">
+                        <div class="work">
+                            <img src="/images/SimCART-Showcase-img.png" alt="">
+                            <div class="layer">
+                                <h3>Shopping Cart</h3>
+                                <p>Working cart only using HTML, CSS, and JS.</p>
+                                <a href="#" target="_blank"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <img src="/images/OBB-Showcase-img.png" alt="">
+                            <div class="layer">
+                                <h3>E-commerce Website 2</h3>
+                                <p>Optimized e-commerce site with cart functionality using HTML, CSS, and JS.</p>
+                                <a href="#" target="_blank"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <img src="/images/ALOG-Showcase-img.png" alt="">
+                            <div class="layer">
+                                <h3>Simple Login Page</h3>
+                                <p>Responsive login using HTML, CSS, and JS.</p>
+                                <a href="#" target="_blank"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="port-Btn">See more</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-4">
+            <div id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="contact-left">
+                            <h1 class="sub-title">Contact Me</h1>
+                            <p><i class="bi bi-envelope-at"></i> your.email@example.com</p>
+                            <div class="social-icons">
+                                <a href="#" target="_blank"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" target="_blank"><i class="bi bi-twitter"></i></a>
+                                <a href="#" target="_blank"><i class="bi bi-instagram"></i></a>
+                            </div>
+                            <a href="#" download class="cont-Btn">Download Resume</a>
+                        </div>
+                        <div class="contact-right">
+                            <form id="contactForm">
+                                <div class="alert">Your message has been sent</div>
+                                <input type="text" name="name" id="Name" placeholder="Your name" required autocomplete="off">
+                                <input type="email" name="email" id="Email" placeholder="Your email" required autocomplete="off">
+                                <textarea name="message" rows="6" id="Message" placeholder="Your Message"></textarea>
+                                <button type="submit" class="cont-Btn">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="copyright">
+            <p>These contents are copyrighted <i class="bi bi-c-circle"></i> 2023</p>
+        </div>
+    </footer>
+
+    <script src="#"></script>
+    <script src="#"></script>
+    <script>
+        /*This JS is for small-screen navbar. */
+        var sidemen = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemen.style.right = "0";
+        }
+        function closemenu() {
+            sidemen.style.right = "-200px";
+        }
+    </script>
+
+    <script src="#"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['CS Student', 'Web Developer', 'UI/UX Designer'],
+            typeSpeed: 50,
+       
+
+ });
+    </script>
+
+</body>
+</html>
